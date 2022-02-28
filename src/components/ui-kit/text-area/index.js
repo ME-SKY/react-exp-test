@@ -1,5 +1,4 @@
-import React, {useEffect, useMemo, useRef, useState} from 'react';
-import useCheckRenders from "../../dev-helpers/use-check-renders";
+import React from 'react';
 import './text-area.css'
 import Input from "rsuite/Input";
 

@@ -1,6 +1,6 @@
-import React, {useCallback, useEffect, useMemo, useRef, useState} from "react";
+import React, {useEffect, useMemo, useState} from "react";
 import './Test.css'
-import {Checkbox, CheckboxGroup, Button} from 'rsuite';
+import {Checkbox, CheckboxGroup} from 'rsuite';
 import TextArea from "../ui-kit/text-area";
 
 function Test(props) {

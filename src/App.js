@@ -1,8 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
 import Test from "./components/test/Test";
 import testDataArray from './data/testData.json';
-import React, {useEffect, useMemo, useState} from "react";
+import React, {useState} from "react";
 
 function App() {
   const testData = [...testDataArray];
