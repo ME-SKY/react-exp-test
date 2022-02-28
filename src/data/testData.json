@@ -1,0 +1,20 @@
+[
+  {
+    "text": "Which houses from \"Harry Potter\" do you like?",
+    "type": "test",
+    "options": [
+      "Slytherin",
+      "Litreball",
+      "Hufflepuff",
+      "Jinglejazz",
+      "Ravenclaw",
+      "Rittersport",
+      "Gryffindor",
+      "Branderbear"
+    ]
+  },
+  {
+    "text": "Tell something about yourself?",
+    "type": "question"
+  }
+]

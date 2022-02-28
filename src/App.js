@@ -1,23 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import Test from "./components/test/Test";
+import testDataArray from './data/testData.json';
+import React, {useEffect, useMemo, useState} from "react";
 
 function App() {
+  const testData = [...testDataArray];
+
+  const [currentQuestion, setCurrentQuestion] = useState({data: testData[0], number: 0});
+
+  const toggleToNext = (questionId) => {
+    if(testData.length - 1 >= questionId){
+      setCurrentQuestion({data: testData[questionId], number: questionId});
+    } else {
+      setCurrentQuestion({data: testData[0], number: 0});
+    }
+  };
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {currentQuestion && <Test questionData={currentQuestion.data} questionNumber={currentQuestion.number} toggleNext={toggleToNext}/>}
     </div>
   );
 }
